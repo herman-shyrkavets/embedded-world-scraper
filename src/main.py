@@ -22,7 +22,6 @@ def main():
             loader.load_all_exhibitors()
             urls = loader.get_exhibitor_urls()
 
-            urls = urls[:50]
             if not urls:
                 logger.error("No URLs collected. Terminating process.")
                 return
